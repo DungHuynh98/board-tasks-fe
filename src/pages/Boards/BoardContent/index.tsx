@@ -1,6 +1,6 @@
 import Box from "@mui/material/Box";
 import { Theme } from "@mui/material/styles";
-import { CustomTheme } from "../../../theme";
+import { CustomTheme } from "~/theme";
 
 export const BoardContent = () => {
   const getBoardContentHeight = (theme: Theme) => {

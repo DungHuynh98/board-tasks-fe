@@ -1,5 +1,5 @@
 import Box from "@mui/material/Box";
-import { CustomTheme } from "../../../theme";
+import { CustomTheme } from "~/theme";
 
 export const BoardBar = () => {
   return (

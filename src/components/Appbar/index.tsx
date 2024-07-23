@@ -1,6 +1,6 @@
 import Box from "@mui/material/Box";
-import { ModeSelect } from "../../components/ModeSelect";
-import { CustomTheme } from "../../theme";
+import { ModeSelect } from "~/components/ModeSelect";
+import { CustomTheme } from "~/theme";
 
 export const AppBar = () => {
   return (
