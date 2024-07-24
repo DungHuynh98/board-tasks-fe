@@ -16,8 +16,8 @@ export type CustomTheme = CurrentTheme & {
 
 const theme: CustomTheme = extendTheme({
   boardTask: {
-    headerHeight: 48,
-    boardHeight: 58,
+    headerHeight: 58,
+    boardHeight: 60,
   },
   colorSchemes: {
     light: {
@@ -30,6 +30,59 @@ const theme: CustomTheme = extendTheme({
       palette: {
         primary: cyan,
         secondary: orange,
+      },
+    },
+  },
+  components: {
+    MuiCssBaseline: {
+      styleOverrides: {
+        body: {
+          "*::-webkit-scrollbar": {
+            width: 8,
+            height: 8,
+          },
+          "*::-webkit-scrollbar-thumb": {
+            backgroundColor: "#bdc3c7",
+            borderRadius: 8,
+          },
+          "*::-webkit-scrollbar-thumb:hover": {
+            backgroundColor: "#00b894",
+          },
+        },
+      },
+    },
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          textTransform: "none",
+        },
+      },
+    },
+    MuiInputLabel: {
+      styleOverrides: {
+        root: ({ theme }: { theme: CustomTheme }) => ({
+          color: theme.palette.primary.main,
+          fontSize: "0.875rem",
+        }),
+      },
+    },
+    MuiOutlinedInput: {
+      styleOverrides: {
+        root: ({ theme }: { theme: CustomTheme }) => ({
+          color: theme.palette.primary.main,
+          fontSize: "0.875rem",
+          ".MuiOutlinedInput-notchedOutline": {
+            borderColor: theme.palette.primary.light,
+          },
+          "&:hover": {
+            ".MuiOutlinedInput-notchedOutline": {
+              borderColor: theme.palette.primary.main,
+            },
+          },
+          "& fieldset": {
+            borderWidth: "1px !important",
+          },
+        }),
       },
     },
   },
