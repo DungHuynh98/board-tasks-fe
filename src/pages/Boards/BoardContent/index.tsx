@@ -16,9 +16,9 @@ export const BoardContent = () => {
         height: getBoardContentHeight,
         display: "flex",
         alignItems: "center",
+        bgcolor: (theme) =>
+          theme.palette.mode === "dark" ? "#34495e" : "#1976d2",
       }}
-    >
-      Board Content
-    </Box>
+    ></Box>
   );
 };
