@@ -35,7 +35,7 @@ export const Profiles = () => {
           aria-haspopup="true"
           aria-expanded={open ? "true" : undefined}
         >
-          <Avatar sx={{ width: 30, height: 30 }}>D</Avatar>
+          <Avatar sx={{ width: 34, height: 34 }}>D</Avatar>
         </IconButton>
       </Tooltip>
       <Menu

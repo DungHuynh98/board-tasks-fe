@@ -16,6 +16,7 @@ import { Recent } from "./Menus/Recent";
 import { Starred } from "./Menus/Starred";
 import { Templates } from "./Menus/Templates";
 import { Workspaces } from "./Menus/Workspaces";
+import LibraryAddIcon from "@mui/icons-material/LibraryAdd";
 
 export const AppBar = () => {
   return (
@@ -55,7 +56,9 @@ export const AppBar = () => {
           <Recent />
           <Starred />
           <Templates />
-          <Button variant="outlined">Create</Button>
+          <Button variant="outlined" startIcon={<LibraryAddIcon />}>
+            Create
+          </Button>
         </Box>
       </Box>
       <Box sx={{ display: "flex", alignItems: "center", gap: 2 }}>
