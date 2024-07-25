@@ -11,13 +11,18 @@ export type CustomTheme = CurrentTheme & {
   boardTask: {
     headerHeight: number;
     boardHeight: number;
+    contentHeight: string;
   };
 };
 
+const HEADER_HEIGHT = 58;
+const BOARD_HEIGHT = 60;
+
 const theme: CustomTheme = extendTheme({
   boardTask: {
-    headerHeight: 58,
-    boardHeight: 60,
+    headerHeight: HEADER_HEIGHT,
+    boardHeight: BOARD_HEIGHT,
+    contentHeight: `calc(100vh - ${HEADER_HEIGHT}px - ${BOARD_HEIGHT}px)`,
   },
   colorSchemes: {
     // light: {
@@ -66,6 +71,15 @@ const theme: CustomTheme = extendTheme({
       styleOverrides: {
         root: {
           fontSize: "0.875rem",
+        },
+      },
+    },
+    MuiTypography: {
+      styleOverrides: {
+        root: {
+          "&.MuiTypography-body1": {
+            fontSize: "0.875rem",
+          },
         },
       },
     },
