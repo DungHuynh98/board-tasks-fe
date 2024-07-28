@@ -12,17 +12,23 @@ export type CustomTheme = CurrentTheme & {
     headerHeight: number;
     boardHeight: number;
     contentHeight: string;
+    columnHeaderHeight: number;
+    columnFooterHeight: number;
   };
 };
 
 const HEADER_HEIGHT = 58;
 const BOARD_HEIGHT = 60;
+const COLUMN_HEADER_HEIGHT = 50;
+const COLUMN_FOOTER_HEIGHT = 56;
 
 const theme: CustomTheme = extendTheme({
   boardTask: {
     headerHeight: HEADER_HEIGHT,
     boardHeight: BOARD_HEIGHT,
     contentHeight: `calc(100vh - ${HEADER_HEIGHT}px - ${BOARD_HEIGHT}px)`,
+    columnHeaderHeight: COLUMN_HEADER_HEIGHT,
+    columnFooterHeight: COLUMN_FOOTER_HEIGHT,
   },
   colorSchemes: {
     // light: {

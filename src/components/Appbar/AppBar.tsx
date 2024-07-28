@@ -9,7 +9,7 @@ import TextField from "@mui/material/TextField";
 import Tooltip from "@mui/material/Tooltip";
 import Typography from "@mui/material/Typography";
 import LogoIcon from "~/assets/logo.svg?react";
-import { ModeSelect } from "~/components/ModeSelect";
+import { ModeSelect } from "~/components/ModeSelect/ModeSelect";
 import { CustomTheme } from "~/theme";
 import { Profiles } from "./Menus/Profiles";
 import { Recent } from "./Menus/Recent";

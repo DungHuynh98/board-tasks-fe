@@ -37,7 +37,6 @@ export const BoardBar = () => {
         justifyContent: "space-between",
         gap: 2,
         overflowX: "auto",
-        borderBottom: "1px solid white",
         paddingX: 2,
         bgcolor: (theme) =>
           theme.palette.mode === "dark" ? "#34495e" : "#1976d2",
